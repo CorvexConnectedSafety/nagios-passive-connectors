@@ -1,5 +1,6 @@
-#Check_docker for Nagios
+#nsca_mqtt for Nagios
 #By George Jones for Corvex Connected
+#Retrieve the active/inactive/unknonw status of Mosquitto and send it to the Nagios server.
 
 #!/bin/bash
 
