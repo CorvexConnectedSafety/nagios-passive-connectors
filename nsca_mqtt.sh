@@ -1,6 +1,7 @@
 #nsca_mqtt for Nagios
 #By George Jones for Corvex Connected
 #Retrieve the active/inactive/unknonw status of Mosquitto and send it to the Nagios server.
+#Will need to change this so the hostname is no longer hard-coded.
 
 #!/bin/bash
 
