@@ -10,7 +10,7 @@ SERVER=localhost #this is the nagios server's address/fqdn. In this case, we're 
 HOST=$HOSTNAME
 
 SERVICE='passive_check_swap'
-TEXT=$( ${PLUGINS}/check_swap -w 40% -c 20% ) ;
+TEXT=$( ${PLUGINS}/check_swap -w 20% -c 10% ) ;
 RET=$?
 
 echo -e "${HOST};${SERVICE};${RET};${TEXT}" | /usr/sbin/send_nsca -H $SERVER -p 5667 -d ";" -c /etc/send_nsca.cfg
