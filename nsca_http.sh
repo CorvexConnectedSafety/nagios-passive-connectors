@@ -10,7 +10,7 @@ SERVER=localhost #this is the nagios server's address/fqdn. In this case, we're 
 HOST=$HOSTNAME
 
 SERVICE='passive_check_http'
-TEXT=$( ${PLUGINS}/check_http -H localhost -w 5 -c 10 ) ;
+TEXT=$( ${PLUGINS}/check_http -H localhost -u scripts/dump.cgi -w 5 -c 10 ) ;
 RET=$?
 
 echo -e "${HOST};${SERVICE};${RET};${TEXT}" | /usr/sbin/send_nsca -H $SERVER -p 5667 -d ";" -c /etc/send_nsca.cfg
