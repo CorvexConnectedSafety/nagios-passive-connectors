@@ -5,7 +5,7 @@
 # By George Jones for Corvex Connected
 
 PLUGINS='/usr/lib/nagios/plugins'
-SERVER=localhost #this is the nagios server's address/fqdn. In this case, we're using an ssh tunnel with the server being reachable via localhost
+SERVER=127.0.0.1 #this is the nagios server's address/fqdn. In this case, we're using an ssh tunnel with the server being reachable via localhost
 
 HOST=$HOSTNAME
 
